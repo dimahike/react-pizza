@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 
-function Categories({ items }) {
+const Categories = React.memo(function Categories({ items, onClickItem }) {
   const [activeItem, setActiveItem] = useState(0);
 
   const onSelectItem = (index) => {
-    setActiveItem(index)
-  }
+    setActiveItem(index);
+    onClickItem(index);
+  };
+
+  console.log('RERENDER CATEGORIES');
+
   return (
     <div className="categories">
       <ul>
@@ -20,8 +24,7 @@ function Categories({ items }) {
       </ul>
     </div>
   );
-}
-
+});
 // class Categories extends React.Component {
 //   state = {
 //     activeItem: 0,
