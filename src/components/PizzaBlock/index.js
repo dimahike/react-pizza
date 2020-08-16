@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-function PizzaBlock({ imageUrl, name, sizes, types, price }) {
+function PizzaBlock({ imageUrl, name, sizes, types, price, rating }) {
   const typeNames = ['тонкое', 'традиционное'];
   const [activeType, setActiveType] = useState(types[0]);
   const onSelectType = (index) => {
@@ -18,7 +18,10 @@ function PizzaBlock({ imageUrl, name, sizes, types, price }) {
   return (
     <div className="pizza-block">
       <img className="pizza-block__image" src={imageUrl} alt="Pizza" />
-      <h4 className="pizza-block__title">{name}</h4>
+      <h4 className="pizza-block__title">
+        {name} 
+      </h4>
+      <h4 style={{ color: 'red', justifySelf: 'end', marginBottom: "5px" }}>Рейтинг: {rating}</h4>
       <div className="pizza-block__selector">
         <ul>
           {typeNames.map((type, index) => (
@@ -79,8 +82,6 @@ PizzaBlock.propTypes = {
 
 PizzaBlock.defaultProps = {
   name: '---',
-  imageUrl:
-    'https://img2.freepng.ru/20180315/lvw/kisspng-pizza-pepperoni-cartoon-clip-art-pictures-of-a-pizza-5aab22ac30db60.3389511015211649722001.jpg',
   types: [],
   sizes: 0,
   price: 0,
