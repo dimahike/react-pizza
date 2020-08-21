@@ -2,29 +2,43 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-function PizzaBlock({ imageUrl, name, sizes, types, price, rating }) {
-  const typeNames = ['тонкое', 'традиционное'];
+import Button from '../Button';
+
+function PizzaBlock({ id, imageUrl, name, sizes, types, price, rating, onClickAddPizza, addedCount }) {
+  const availiableTypes = ['тонкое', 'традиционное'];
+  const availiableSizes = [26, 30, 40];
+
   const [activeType, setActiveType] = useState(types[0]);
+  const [activeSize, setActiveSize] = useState(sizes[0]);
+
   const onSelectType = (index) => {
     setActiveType(index);
   };
 
-  const availiableSizes = [26, 30, 40];
-  const [activeSize, setActiveSize] = useState(sizes[0]);
-  const onSelectSize = (index) => {
-    setActiveSize(index);
+  const onSelectSize = (availiableSize) => {
+    setActiveSize(availiableSize);
+  };
+
+  const onHandleAddPizza = () => {
+    let obj = {
+      id,
+      imageUrl,
+      name,
+      price,
+      size: activeSize,
+      type: availiableTypes[activeType],
+    };
+    onClickAddPizza(obj);
   };
 
   return (
     <div className="pizza-block">
       <img className="pizza-block__image" src={imageUrl} alt="Pizza" />
-      <h4 className="pizza-block__title">
-        {name} 
-      </h4>
-      <h4 style={{ color: 'red', justifySelf: 'end', marginBottom: "5px" }}>Рейтинг: {rating}</h4>
+      <h4 className="pizza-block__title">{name}</h4>
+      <h4 style={{ color: 'red', justifySelf: 'end', marginBottom: '5px' }}>Рейтинг: {rating}</h4>
       <div className="pizza-block__selector">
         <ul>
-          {typeNames.map((type, index) => (
+          {availiableTypes.map((type, index) => (
             <li
               key={`${type}_${index}`}
               onClick={() => onSelectType(index)}
@@ -42,7 +56,7 @@ function PizzaBlock({ imageUrl, name, sizes, types, price, rating }) {
               key={`size_${availiableSize}`}
               onClick={() => onSelectSize(availiableSize)}
               className={classnames({
-                active: activeSize === availiableSize,
+                active: availiableSize === activeSize,
                 disabled: !sizes.includes(availiableSize),
               })}>
               {availiableSize}
@@ -52,7 +66,7 @@ function PizzaBlock({ imageUrl, name, sizes, types, price, rating }) {
       </div>
       <div className="pizza-block__bottom">
         <div className="pizza-block__price">от {price} ₽</div>
-        <div className="button button--outline button--add">
+        <Button onClick={onHandleAddPizza} className=" button--add" outline>
           <svg
             width="12"
             height="12"
@@ -65,8 +79,8 @@ function PizzaBlock({ imageUrl, name, sizes, types, price, rating }) {
             />
           </svg>
           <span>Добавить</span>
-          <i>2</i>
-        </div>
+          {addedCount && <i>{addedCount}</i>}
+        </Button>
       </div>
     </div>
   );
@@ -78,6 +92,8 @@ PizzaBlock.propTypes = {
   sizes: PropTypes.arrayOf(PropTypes.number),
   types: PropTypes.arrayOf(PropTypes.number),
   price: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
+  onClickAddPizza: PropTypes.func,
 };
 
 PizzaBlock.defaultProps = {
@@ -85,6 +101,7 @@ PizzaBlock.defaultProps = {
   types: [],
   sizes: 0,
   price: 0,
+  rating: 10,
 };
 
 export default PizzaBlock;

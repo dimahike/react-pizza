@@ -5,14 +5,17 @@ const SortPopup = React.memo(function SortPopup({ items, onClickSortPopup, activ
   const [visiblePopup, setVisiblePopup] = useState(false);
   const sortRef = useRef();
   const activeLabel = items.find((obj) => obj.type === activeSortType).name;
-  // const activeIndexPopup = items.findIndex((item) => item.type === activeSortType);
-  console.log('Checking PropTypes: ', { items, onClickSortPopup, activeSortType });
+
   const toggleVisiblePopup = () => {
     setVisiblePopup(!visiblePopup);
   };
 
-  const handleOutsideClick = (e) => {
-    if (!e.path.includes(sortRef.current)) {
+  const handleOutsideClick = (event) => {
+    const path =
+      event.path ||
+      (event.composedPath && event.composedPath()) ||
+      event.composedPath(event.target);
+    if (!path.includes(sortRef.current)) {
       setVisiblePopup(false);
     }
   };
