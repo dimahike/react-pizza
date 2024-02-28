@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ract-pizza/static/css/main.c0d3816e.chunk.css",
+    "main.js": "/ract-pizza/static/js/main.5514f438.chunk.js",
+    "main.js.map": "/ract-pizza/static/js/main.5514f438.chunk.js.map",
+    "runtime-main.js": "/ract-pizza/static/js/runtime-main.39db4a3e.js",
+    "runtime-main.js.map": "/ract-pizza/static/js/runtime-main.39db4a3e.js.map",
+    "static/js/2.674781e6.chunk.js": "/ract-pizza/static/js/2.674781e6.chunk.js",
+    "static/js/2.674781e6.chunk.js.map": "/ract-pizza/static/js/2.674781e6.chunk.js.map",
+    "index.html": "/ract-pizza/index.html",
+    "precache-manifest.f7e5ca318a6b5226efe2a0689d6c7a90.js": "/ract-pizza/precache-manifest.f7e5ca318a6b5226efe2a0689d6c7a90.js",
+    "service-worker.js": "/ract-pizza/service-worker.js",
+    "static/css/main.c0d3816e.chunk.css.map": "/ract-pizza/static/css/main.c0d3816e.chunk.css.map",
+    "static/js/2.674781e6.chunk.js.LICENSE.txt": "/ract-pizza/static/js/2.674781e6.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/ract-pizza/static/media/ProximaNova-Regular.b7c51278.eot",
+    "static/media/empty-cart.png": "/ract-pizza/static/media/empty-cart.ceb2faf0.png",
+    "static/media/pizza-logo.svg": "/ract-pizza/static/media/pizza-logo.f3327011.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39db4a3e.js",
+    "static/js/2.674781e6.chunk.js",
+    "static/css/main.c0d3816e.chunk.css",
+    "static/js/main.5514f438.chunk.js"
+  ]
+}
