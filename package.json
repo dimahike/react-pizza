@@ -1,5 +1,6 @@
 {
   "name": "ract-pizza",
+  "homepage": "http://dimahike.github.io/react-pizza",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,12 +25,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "npx json-server@0.17.4 --watch public/db.json --port 3001"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:3001",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

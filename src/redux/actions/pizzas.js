@@ -1,4 +1,4 @@
-import axios from 'axios';
+import {getPizzasImitate} from "../../util/getPizzasImitate"
 
 export const setLoaded = (payload) => ({
   type: 'SET_LOADED',
@@ -6,12 +6,9 @@ export const setLoaded = (payload) => ({
 });
 
 export const fetchPizzas = (category, sortBy) => (dispatch) => {
-  axios
-    .get(
-      `/pizzas?${category > 0 && `category=${category - 1}`}&_sort=${sortBy.type}&_order=${
-        sortBy.order
-      }`,
-    )
+	dispatch(setLoaded(false));
+
+	getPizzasImitate(category, sortBy)
     .then(({ data }) => {
       dispatch(setPizzas(data));
     });
