@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ract-pizza/precache-manifest.f7e5ca318a6b5226efe2a0689d6c7a90.js"
+  "/ract-pizza/precache-manifest.c7dc9f4f0315cbd0a168d76664c6cc39.js"
 );
 
 self.addEventListener('message', (event) => {

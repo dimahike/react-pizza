@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "efb5d86a5729e5340d8b050cf935ba4f",
+    "revision": "f6c273c4f1c2ae6c6b90800f2be56429",
     "url": "/ract-pizza/index.html"
   },
   {
-    "revision": "f65b9255321d65b4bb26",
+    "revision": "96ff4a8c2c1d179dfc52",
     "url": "/ract-pizza/static/css/main.c0d3816e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ract-pizza/static/js/2.674781e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f65b9255321d65b4bb26",
-    "url": "/ract-pizza/static/js/main.5514f438.chunk.js"
+    "revision": "96ff4a8c2c1d179dfc52",
+    "url": "/ract-pizza/static/js/main.53b93a6b.chunk.js"
   },
   {
     "revision": "4dedeb277230e949241a",
