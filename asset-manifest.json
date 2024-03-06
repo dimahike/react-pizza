@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/react-pizza/static/css/main.d2e5263d.chunk.css",
-    "main.js": "/react-pizza/static/js/main.02c0dfd3.chunk.js",
-    "main.js.map": "/react-pizza/static/js/main.02c0dfd3.chunk.js.map",
-    "runtime-main.js": "/react-pizza/static/js/runtime-main.569886f5.js",
-    "runtime-main.js.map": "/react-pizza/static/js/runtime-main.569886f5.js.map",
-    "static/js/2.674781e6.chunk.js": "/react-pizza/static/js/2.674781e6.chunk.js",
-    "static/js/2.674781e6.chunk.js.map": "/react-pizza/static/js/2.674781e6.chunk.js.map",
-    "index.html": "/react-pizza/index.html",
-    "precache-manifest.4df70f87385461c4db06a3f8d9cdc235.js": "/react-pizza/precache-manifest.4df70f87385461c4db06a3f8d9cdc235.js",
-    "service-worker.js": "/react-pizza/service-worker.js",
-    "static/css/main.d2e5263d.chunk.css.map": "/react-pizza/static/css/main.d2e5263d.chunk.css.map",
-    "static/js/2.674781e6.chunk.js.LICENSE.txt": "/react-pizza/static/js/2.674781e6.chunk.js.LICENSE.txt",
-    "static/media/app.scss": "/react-pizza/static/media/ProximaNova-Regular.b7c51278.eot",
-    "static/media/empty-cart.png": "/react-pizza/static/media/empty-cart.ceb2faf0.png",
-    "static/media/pizza-logo.svg": "/react-pizza/static/media/pizza-logo.f3327011.svg"
+    "main.css": "/react-rick-and-morty-with-scrolling/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/react-rick-and-morty-with-scrolling/static/js/main.ed49dc34.chunk.js",
+    "main.js.map": "/react-rick-and-morty-with-scrolling/static/js/main.ed49dc34.chunk.js.map",
+    "runtime-main.js": "/react-rick-and-morty-with-scrolling/static/js/runtime-main.c1ebb6d0.js",
+    "runtime-main.js.map": "/react-rick-and-morty-with-scrolling/static/js/runtime-main.c1ebb6d0.js.map",
+    "static/js/2.f206de7a.chunk.js": "/react-rick-and-morty-with-scrolling/static/js/2.f206de7a.chunk.js",
+    "static/js/2.f206de7a.chunk.js.map": "/react-rick-and-morty-with-scrolling/static/js/2.f206de7a.chunk.js.map",
+    "static/js/3.b44de7d5.chunk.js": "/react-rick-and-morty-with-scrolling/static/js/3.b44de7d5.chunk.js",
+    "static/js/3.b44de7d5.chunk.js.map": "/react-rick-and-morty-with-scrolling/static/js/3.b44de7d5.chunk.js.map",
+    "index.html": "/react-rick-and-morty-with-scrolling/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/react-rick-and-morty-with-scrolling/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.f206de7a.chunk.js.LICENSE.txt": "/react-rick-and-morty-with-scrolling/static/js/2.f206de7a.chunk.js.LICENSE.txt",
+    "static/media/poster.9bdff6c7.jpg": "/react-rick-and-morty-with-scrolling/static/media/poster.9bdff6c7.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.569886f5.js",
-    "static/js/2.674781e6.chunk.js",
-    "static/css/main.d2e5263d.chunk.css",
-    "static/js/main.02c0dfd3.chunk.js"
+    "static/js/runtime-main.c1ebb6d0.js",
+    "static/js/2.f206de7a.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.ed49dc34.chunk.js"
   ]
 }
